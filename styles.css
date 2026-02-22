@@ -7,7 +7,7 @@
 
 body{
     background:#ffffff;
-    color:#1e293b;
+    color:#1d304e;
 }
 
 /* ================= HEADER ================= */
@@ -130,7 +130,7 @@ p{
 /* ================= CTA ================= */
 
 .cta{
-    background:#0f172a;
+    background:#203543;
     color:white;
     text-align:center;
     padding:80px;
@@ -466,3 +466,47 @@ footer {
     font-size: 16px;               /* tamaño de texto legible */
 }
 
+
+/* ================= pagina especialidades ================= */
+
+/* GRID FLEXIBLE PARA TARJETAS CENTRANDO LAS FILAS */
+.service-cards-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center; /* centra todas las filas y tarjetas */
+    margin-top: 25px;
+}
+
+.service-card {
+    background: #ffffff;
+    padding: 20px 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 280px; /* ancho fijo para que el wrap funcione */
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.service-card h4 {
+    font-size: 18px;
+    color: #0f172a; /* azul de la web */
+    margin-bottom: 10px;
+}
+
+.service-card p {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #1e293b;
+}
+
+/* Responsive */
+@media(max-width:600px){
+    .service-card {
+        width: 100%; /* ocupan todo el ancho en móvil */
+    }
+}
