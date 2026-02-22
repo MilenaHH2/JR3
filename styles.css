@@ -596,3 +596,145 @@ footer {
     }
 }
 
+
+/* FORMULARIO DE APLICACIÓN */
+.application-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.application-form label {
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #0f172a; /* azul oscuro */
+}
+
+.application-form input,
+.application-form textarea {
+    padding: 12px 15px;
+    border: 1px solid #f4f5f7;
+    border-radius: 6px;
+    font-size: 14px;
+    width: 100%;
+}
+
+.application-form textarea {
+    resize: vertical;
+}
+
+.application-form .form-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.application-form .form-checkbox label a {
+    color: #3b82f6; /* azul corporativo */
+    text-decoration: underline;
+}
+
+.application-form button {
+    padding: 14px 40px;
+    border: none;
+    background-color: #3b82f6; /* azul corporativo */
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.application-form button:hover {
+    opacity: 0.8;
+}
+
+/* Responsive */
+@media(max-width:900px){
+    .application-form {
+        gap: 15px;
+    }
+}
+
+/* CONTENEDOR GENERAL PARA CENTRAR EL FORMULARIO */
+.contact-section {
+    display: flex;
+    justify-content: center; /* centra horizontalmente */
+    align-items: center;     /* centra verticalmente si hay altura suficiente */
+    padding: 60px 20px;      /* espacio superior e inferior */
+    background-color: #ffffff; /* fondo blanco para la sección */
+}
+
+/* FORMULARIO DE CONTACTO */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    max-width: 600px;
+    width: 100%;
+}
+
+.contact-form label {
+    font-weight: 600;
+    color: #1e73be; /* azul web */
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-form .checkbox-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+}
+
+.contact-form .checkbox-container a {
+    color: #1e73be;
+    text-decoration: none;
+}
+
+.contact-form .checkbox-container a:hover {
+    text-decoration: underline;
+}
+
+.contact-form button {
+    background-color: #1e73be;
+    color: white;
+    font-weight: 600;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #155a94;
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 900px) {
+    .contact-section {
+        padding: 40px 15px;
+    }
+}
+
