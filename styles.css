@@ -510,3 +510,27 @@ footer {
         width: 100%; /* ocupan todo el ancho en móvil */
     }
 }
+
+/* ================= pagina metodologia ================= */
+
+.section.advanced .split-image img {
+    width: 100%;         /* ocupa todo el ancho del contenedor */
+    max-width: 300px;    /* tamaño más pequeño */
+    height: auto;        /* mantiene proporción */
+    border-radius: 8px;
+    opacity: 0.7;        /* transparencia al 70% */
+    transition: 0.4s ease;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .section.advanced .split-container,
+    .section.advanced .split-container.reverse {
+        flex-direction: column;
+    }
+
+    .section.advanced .split-image img {
+        max-width: 80%;    /* más grande en móvil */
+        opacity: 0.7;      /* mantiene transparencia */
+    }
+}
