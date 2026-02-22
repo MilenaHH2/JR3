@@ -428,3 +428,41 @@ footer {
         flex: unset;
     }
 }
+
+
+
+/* pagina SERVICIOS */
+
+/* TEXTO DESTACADO DE SERVICIOS */
+.service-highlight {
+    font-size: 24px;        /* Tamaño legible */
+     text-align: center;      /* CENTRADO */
+    line-height: 1.3;       /* Más espacio entre líneas */
+    color: #87A4AF;         /* Igual que el body principal */
+    font-weight: 400;       /* Normal, no demasiado pesado */
+    margin-top: 20px;       /* Separación del texto anterior */
+
+}
+
+@media (max-width: 900px){
+    .service-highlight{
+        font-size: 15px;
+        line-height: 1.7;
+        max-width: 100%;
+    }
+}
+
+/* SERVICIOS DESTACADOS */
+.split-text ul {
+    list-style-type: disc;       /* puedes cambiar a decimal si quieres numeración */
+    padding-left: 25px;           /* sangría para las viñetas */
+    margin-top: 15px;             /* espacio arriba del listado */
+    margin-bottom: 15px;          /* espacio abajo del listado */
+    line-height: 1.8;             /* aumenta el espacio entre líneas */
+}
+
+.split-text ul li {
+    margin-bottom: 12px;          /* espacio entre cada viñeta */
+    font-size: 16px;               /* tamaño de texto legible */
+}
+
